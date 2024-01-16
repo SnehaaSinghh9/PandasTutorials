@@ -1,4 +1,4 @@
-#Video2:- Panda Series is like a column in a table. It is like 1D array which holds data of any type.
+#Video2:- Panda Series is like a column in a table. It is like a 1D array which holds data of any type.
 #Let us create a simple Panda series.
 
 #1. 1-D
@@ -7,12 +7,12 @@ list1 =["Sneha", 21, "F"]
 series1=pd.Series(list1)
 print(series1)
 
-#The output is in the table form with first column as index of each element of the series and the second column as actual element.
+#The output is in table form with the first column as an index of each element of the series and the second column as the actual element.
 # 0    Sneha
 # 1       21
 # 2        F
 
-#We can access the elements of the seies by using the index which is called as "labeling".
+#We can access the elements of the series by using the index which is called "labeling".
 #Labeling - label can be used to access a specified value.
 import pandas as pd 
 list1 =["Sneha", 21, "F"]
@@ -45,18 +45,20 @@ print(series1["Gender"])
 # 21
 # F
 
-#We can also use a key-value pair like dictionary instead of a list to create a series.
+#We can also use a key-value pair like a dictionary instead of a list to create a series.
 import pandas as pd 
 calorie={"day1":420,"day2":380,"day3":560}
 cal_series = pd.Series(calorie)
 print(cal_series)
+
+#Here, the keys of the dictionary become the labels.
 
 # output:-
 # day1    420
 # day2    380
 # day3    560
 
-#We can also create a seies using particular values from the given list or dictionary.
+#We can also create a series using particular values from the given list or dictionary.
 #Example:- We want a seies for only day3 and day1. 
 #For this use labeling and pass only the required labels in the required order.
 import pandas as pd 
@@ -81,7 +83,7 @@ diet = {"Fruits":["Apple","Kiwi","Oranges"], "Vegetables":["Spinach","Brocolli",
 diet_series = pd.DataFrame(diet)
 print(diet_series)
 
-#The output is in the table form with first column as index of each element of the series and the second and third column with key as the title and value as actual element.
+#The output is in table form with the first column as an index of each element of the series and the second and third columns with the key as the title and value as the actual element.
 #     Fruits  Vegetables
 # 0    Apple    Spinach
 # 1     Kiwi   Brocolli
